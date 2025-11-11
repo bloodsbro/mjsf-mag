@@ -1,0 +1,29 @@
+{
+  "name": "@bloodsbro/document-uploader",
+  "version": "0.1.1",
+  "type": "module",
+  "main": "./index.ts",
+  "types": "./index.d.ts",
+  "files": [
+    "index.ts",
+    "index.d.ts",
+    "DocumentUploader.vue",
+    "README.md"
+  ],
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "uploader",
+    "drag-and-drop",
+    "documents"
+  ],
+  "description": "Vue 3 DocumentUploader plugin with drag&drop and previews",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/bloodsbro/lab5"
+  }
+}

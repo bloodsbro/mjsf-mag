@@ -15,3 +15,11 @@ export interface Updateable<T> {
 export interface Deleteable<T> {
     delete(id: number): Promise<T>;
 }
+
+// Aliases to match requested naming in the task
+export type Creatable<T> = Createable<T>;
+export type Editable<T> = Updateable<T>;
+export type Deletable<T> = Deleteable<T>;
+
+// Writable combines create + update operations
+export type Writable<T> = Creatable<T> & Editable<T>;

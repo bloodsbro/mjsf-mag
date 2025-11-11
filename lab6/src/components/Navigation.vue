@@ -29,6 +29,15 @@
                     <li>
                         <RouterLink
                                 activeClass="font-medium text-black dark:text-white  bg-gray-100"
+                                class="block py-2 px-3 rounded hover:bg-gray-100"
+                                to="/products"
+                              >
+                            Products
+                        </RouterLink>
+                    </li>
+                    <li>
+                        <RouterLink
+                                activeClass="font-medium text-black dark:text-white  bg-gray-100"
 
                                 class="block py-2 px-3 rounded hover:bg-gray-100"
                                 to="/about"

@@ -1,4 +1,6 @@
 import {CategoriesService} from "@/services/categories.service";
+import {ProductsService} from "@/services/products.service";
+import {UsersService} from "@/services/users.service";
 
 import httpClient from "@/utils/http-client";
 
@@ -13,10 +15,24 @@ class ServiceProvider {
      * Get cruise service
      */
     getCategoriesService(): CategoriesService {
-        if (!this.serviceInstances.cruiseService) {
-            this.serviceInstances.cruiseService = new CategoriesService(httpClient);
+        if (!this.serviceInstances.categoriesService) {
+            this.serviceInstances.categoriesService = new CategoriesService(httpClient);
         }
-        return this.serviceInstances.cruiseService;
+        return this.serviceInstances.categoriesService;
+    }
+
+    getProductsService(): ProductsService {
+        if (!this.serviceInstances.productsService) {
+            this.serviceInstances.productsService = new ProductsService(httpClient);
+        }
+        return this.serviceInstances.productsService;
+    }
+
+    getUsersService(): UsersService {
+        if (!this.serviceInstances.usersService) {
+            this.serviceInstances.usersService = new UsersService(httpClient);
+        }
+        return this.serviceInstances.usersService;
     }
 
     /**
